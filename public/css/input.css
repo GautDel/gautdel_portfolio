@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+background-color: #ececec;
+}
+
+.test-shadow {
+ border-radius: 5px;
+ box-shadow:
+ -10px -10px 10px rgba(255,255,255,0.55),
+ 6px 6px 15px rgba(70,70,70,0.22);
+}
+
+.test-shadow-2 {
+ border-radius: 5px;
+ box-shadow:
+ -10px -10px 15px rgba(255,255,255,1),
+ 10px 10px 15px rgba(70,70,70,0.22);
+}
+
+.test-shadow-3 {
+ border-radius: 5px;
+ box-shadow: inset
+ -5px -5px 5px rgba(70,70,70,0.17),
+ inset 5px 5px 5px rgba(70,70,70,0.17);
+}
+
+.image-test {
+    border-radius: 5px;
+    background-image: url("https://avatars.githubusercontent.com/u/60462635?v=4");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
