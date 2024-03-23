@@ -34,3 +34,48 @@ background-color: #ececec;
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+.anim-test {
+    position: absolute;
+    z-index: 99;
+    animation: projects 1s forwards;
+}
+
+.contact-open {
+    z-index: 98;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: contact-open 1s forwards;
+}
+
+@keyframes projects {
+    0% {
+        height: 0%;
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+        height: 0%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@keyframes contact-open {
+    0% {
+        height: 5rem;
+    }
+
+
+    100% {
+        height: -100%;
+    }
+
+}
+
