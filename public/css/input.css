@@ -3,14 +3,29 @@
 @tailwind utilities;
 
 body {
-background-color: #ececec;
+    background-color: #ececec;
 }
+
+.bg-white-custom {
+    background-color: #ececec;
+}
+
+.rounded-5 {
+ border-radius: 5px;
+}
+
 
 .test-shadow {
  border-radius: 5px;
  box-shadow:
  -10px -10px 10px rgba(255,255,255,0.55),
  6px 6px 15px rgba(70,70,70,0.22);
+}
+
+.test-shadow-dark {
+ box-shadow:
+ -5px -5px 10px rgba(115, 115, 115,0.35),
+ 6px 6px 15px rgba(23, 23, 23,0.52);
 }
 
 .test-shadow-2 {

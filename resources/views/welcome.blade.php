@@ -21,7 +21,7 @@
     ])
 </head>
 
-<body x-data="{projects: false, contact: false, weather: getWeather()}" class="antialiased relative p-2 lg:flex lg:justify-center lg:items-center lg:overflow-scroll lg:pt-10">
+<body x-data="{projects: false, contact: false, technologies: false, weather: getWeather()}" class="antialiased relative p-2 lg:flex lg:justify-center lg:items-center lg:overflow-scroll lg:pt-10">
     <!-- Main box -->
     <div class="w-full h-full flex flex-col gap-4 lg:max-w-5xl justify-center items-center relative">
 
@@ -116,10 +116,10 @@
                 <h1 class="text-white text-center font-extrabold text-4xl ">PROJECTS</h1>
             </div>
 
-            <div class="test-shadow flex bg-[#ececec] justify-center items-center min-h-24 px-4">
+            <div @click="technologies = !technologies" class="test-shadow flex bg-[#ececec] justify-center items-center min-h-24 px-4 cursor-pointer">
                 <h1 class="text-neutral-700 font-extrabold text-4xl text-center">TECHNOLOGIES</h1>
             </div>
-            <p x-text="console.log(typeof weather)"></p>
+
             <div class="test-shadow w-full md:w-4/12 pr-20 pb-20 bg-[#ececec] relative min-h-40 px-4">
                 <h1 :class="weather > 25 ? 'text-red-500' : 'text-blue-500'" class="absolute right-2 top-2 font-extrabold text-2xl md:text-lg lg:text-2xl" x-text="`${await weather} °C`"></h1>
                 <h1 id="day" class="text-neutral-500 absolute left-1/2 -translate-x-1/2 top-2 font-extrabold text-2xl md:left-2 md:-translate-x-0 md:text-lg lg:text-2xl lg:left-1/2 lg:-translate-x-1/2"></h1>
@@ -129,8 +129,8 @@
 
         </div>
 
-        <div :class="projects ? 'anim-test' : '' " class="flex min-h-40 rounded-[5px] absolute bottom-0 left-0 justify-center items-center bg-neutral-700 cursor-pointer">
-        </div>
+        <x-projects />
+        <x-technologies />
     </div>
 
 </body>
