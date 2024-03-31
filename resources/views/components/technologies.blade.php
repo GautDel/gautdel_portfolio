@@ -1,9 +1,9 @@
-<div x-show="technologies" :class="technologies ? 'anim-test' : '' " class="w-full h-full flex flex-col min-h-40 absolute bottom-0 left-0 items-center cursor-pointer bg-white-custom p-4 rounded-5 md:items-start overflow-x-hidden">
+<div x-data="{close: false}" x-show="technologies" :class="[technologies ? 'anim-test' : '', close ? 'custom-close-slide' : '']" class="w-full h-full flex flex-col min-h-40 absolute bottom-0 left-0 items-center bg-white-custom p-4 rounded-5 md:items-start overflow-x-hidden">
 
     <h2 class="py-8 font-extrabold text-4xl text-neutral-700 text-center self-center">TECHNOLOGIES</h2>
 
     <div class="absolute top-1 right-1 md:top-3 md:right-3">
-        <p @click="technologies = false" class="rotate-45 font-extrabold text-neutral-700 text-6xl">+</p>
+        <p @click="[close = true, setTimeout(() => {technologies = false, close = false}, 1000)]" class="rotate-45 font-extrabold text-neutral-700 text-6xl cursor-pointer md:cursor-none hover:text-red-500 ease-in duration-500">+</p>
     </div>
 
     <div class="md:flex md:flex-row md:flex-wrap overflow-x-hidden pb-8 md:overflow-y-scroll">

@@ -38,10 +38,10 @@
             </div>
 
             <div class="flex flex-row gap-4">
-                <a href="https://github.com/GautDel/fly_paper" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center">
+                <a href="https://github.com/GautDel/fly_paper" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer md:cursor-none custom-cursor-white">
                     <image class="w-8" src="{{asset('/images/github-mark.png')}}">
                 </a>
-                <a href="http://www.flypapershop.eu" target="_blank" class="test-shadow p-4 text-neutral-700 rounded-5 grow flex justify-center items-center bg-white-custom">
+                <a href="http://www.flypapershop.eu" target="_blank" class="test-shadow p-4 text-neutral-700 rounded-5 grow flex justify-center items-center bg-white-custom cursor-pointer md:cursor-none custom-cursor-white">
                     <p class="text-center font-extrabold text-lg">WEBSITE</p>
                 </a>
 
