@@ -1,4 +1,4 @@
-<div x-show="technologies" :class="technologies ? 'anim-test' : '' " class="w-full h-full flex flex-col min-h-40 absolute bottom-0 left-0 items-center cursor-pointer bg-white-custom p-4 rounded-lg md:items-start overflow-x-hidden">
+<div x-show="technologies" :class="technologies ? 'anim-test' : '' " class="w-full h-full flex flex-col min-h-40 absolute bottom-0 left-0 items-center cursor-pointer bg-white-custom p-4 rounded-5 md:items-start overflow-x-hidden">
 
     <h2 class="py-8 font-extrabold text-4xl text-neutral-700 text-center self-center">TECHNOLOGIES</h2>
 
