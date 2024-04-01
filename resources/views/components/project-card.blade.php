@@ -1,47 +1,30 @@
     <div class="flex flex-col gap-4 md:w-5/12 rounded-5 grow my-4 md:mb-0">
-        <image class="max-w-full max-h-80 rounded-5 test-shadow object-cover" src="{{asset('/images/fly_paper.png')}}">
+        <image class="max-w-full max-h-80 rounded-5 test-shadow object-cover" src="{{asset('/images/'.$image)}}">
             <div class="bg-white-custom test-shadow py-4 rounded-5">
-                <h2 class="text-center font-extrabold text-3xl text-neutral-700">FLY PAPER SHOP</h2>
-                <p class="font-semibold text-md text-center text-neutral-500">"An e-commerce shop for all things fly fishing"</p>
+                <h2 class="text-center font-extrabold text-3xl text-neutral-700">{{$title}}</h2>
+                <p class="font-semibold text-md text-center text-neutral-500">"{{$desc}}"</p>
             </div>
 
 
             <div class="bg-white-custom test-shadow p-4 text-neutral-600 rounded-5">
-                <p class="text-center font-semibold">An online platform for fly fishing. Users can post their catches, discuss various topics in the forum section as well as buy any fly fishing material they need in the e-commerce shop.</p>
+                <p class="text-center font-semibold">{{$info}}</p>
 
             </div>
 
             <div class="flex flex-wrap gap-4">
-                <a href="https://www.php.net/manual/class.com.php" target="_blank" class="bg-white-custom test-shadow py-4 px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/php.svg')}}">
+                @foreach($tech as $image)
+                <a class="bg-white-custom test-shadow rounded-5 flex flex-wrap items-center justify-center px-3 py-2 gap-2">
+                    <image class="w-8" src="{{asset('/images/logos/'.$image.'.svg')}}" />
                 </a>
 
-                <a href="https://laravel.com/" target="_blank" class="bg-white-custom test-shadow px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/laravel.svg')}}">
-                </a>
-
-                <a href="https://www.mysql.com/" target="_blank" class="bg-white-custom test-shadow px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/mysql.svg')}}">
-                </a>
-
-                <a href="https://tailwindcss.com/" target="_blank" class="bg-white-custom test-shadow px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/tailwindcss.svg')}}">
-                </a>
-
-                <a href="https://alpinejs.dev/" target="_blank" class="bg-white-custom test-shadow px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/alpinejs.svg')}}">
-                </a>
-
-                <a href="https://vitejs.dev/" target="_blank" class="bg-white-custom test-shadow px-2 rounded-5 flex flex-wrap items-center w-fit h-12">
-                    <image class="w-8" src="{{asset('/images/logos/vitejs.svg')}}">
-                </a>
+                @endforeach
             </div>
 
             <div class="flex flex-row gap-4">
-                <a href="https://github.com/GautDel/fly_paper" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer md:cursor-none custom-cursor-white">
+                <a href="{{$codeurl}}" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer md:cursor-none custom-cursor-white">
                     <image class="w-8" src="{{asset('/images/github-mark.png')}}">
                 </a>
-                <a href="http://www.flypapershop.eu" target="_blank" class="test-shadow p-4 text-white rounded-5 grow flex justify-center items-center bg-neutral-700 cursor-pointer md:cursor-none custom-cursor-white">
+                <a href="{{$websiteurl}}" target="_blank" class="test-shadow p-4 text-white rounded-5 grow flex justify-center items-center bg-neutral-700 cursor-pointer md:cursor-none custom-cursor-white">
                     <p class="text-center font-extrabold text-lg">WEBSITE</p>
                 </a>
 

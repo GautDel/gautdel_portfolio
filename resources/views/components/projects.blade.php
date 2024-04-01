@@ -5,12 +5,25 @@
         <p @click="[close = true, setTimeout(() => {projects = false, close = false}, 1000)]"  class="rotate-45 font-extrabold text-neutral-700 text-6xl hover:text-red-500 origin-center ease-in duration-500 cursor-pointer md:cursor-none">+</p>
     </div>
     <div class="md:flex md:flex-row md:flex-wrap gap-10 md:overflow-y-scroll pb-8 px-4">
-        <x-project-card />
-        <x-project-card />
-        <x-project-card />
-        <x-project-card />
-        <x-project-card />
-        <x-project-card />
+        <x-project-card
+            image="fly_paper.png"
+            title="fly paper shop"
+            desc="An e-commerce shop for all things fly fishing"
+            info="An online platform for fly fishing. Users can post their catches, discuss various topics in the forum section as well as buy any fly fishing material they need in the e-commerce shop."
+            :tech="['php','laravel','mysql','tailwindcss','alpinejs','vitejs']"
+            codeurl="https://github.com/GautDel/fly_paper"
+            websiteurl="http://www.flypapershop.eu"
+        />
+
+        <x-project-card
+            image="fly_paper.png"
+            title="fly paper shop"
+            desc="An e-commerce shop for all things fly fishing"
+            info="An online platform for fly fishing. Users can post their catches, discuss various topics in the forum section as well as buy any fly fishing material they need in the e-commerce shop."
+            :tech="['php','laravel','mysql','tailwindcss','alpinejs','vitejs']"
+            codeurl="https://github.com/GautDel/fly_paper"
+            websiteurl="http://www.flypapershop.eu"
+        />
 
     </div>
 </div>
