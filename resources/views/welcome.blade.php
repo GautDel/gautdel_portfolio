@@ -21,7 +21,7 @@
     ])
 </head>
 
-<body x-data="{projects: false, contact: false, technologies: false, weather: getWeather(), text: ['fullstack developer', 'tennis player &#127934;', 'chef', 'cat pleaser'], counter: 0}" class="antialiased overflow-x-hidden md:cursor-none">
+<body x-data="{projects: false, contact: false, technologies: false, weather: getWeather(), text: ['fullstack developer', 'tennis player &#127934;', 'chef &#128104;&#8205;&#127859;', 'cat pleaser &#128576;'], counter: 0}" class="antialiased overflow-x-hidden md:cursor-none">
 
     <div class="rounded-cursor mix-blend-difference hidden md:block"></div>
 

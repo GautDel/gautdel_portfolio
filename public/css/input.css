@@ -91,6 +91,25 @@ a {
     animation: contact-open 1s forwards;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ececec;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #737373;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @keyframes projects {
     0% {
         height: 0%;

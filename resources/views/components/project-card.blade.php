@@ -1,5 +1,5 @@
-    <div class="flex flex-col gap-4 md:w-3/12 rounded-5 grow mb-4 md:mb-0">
-        <image class="max-w-full rounded-5 test-shadow" src="{{asset('/images/fly_paper.png')}}">
+    <div class="flex flex-col gap-4 md:w-5/12 rounded-5 grow my-4 md:mb-0">
+        <image class="max-w-full max-h-80 rounded-5 test-shadow object-cover" src="{{asset('/images/fly_paper.png')}}">
             <div class="bg-white-custom test-shadow py-4 rounded-5">
                 <h2 class="text-center font-extrabold text-3xl text-neutral-700">FLY PAPER SHOP</h2>
                 <p class="font-semibold text-md text-center text-neutral-500">"An e-commerce shop for all things fly fishing"</p>
@@ -41,7 +41,7 @@
                 <a href="https://github.com/GautDel/fly_paper" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer md:cursor-none custom-cursor-white">
                     <image class="w-8" src="{{asset('/images/github-mark.png')}}">
                 </a>
-                <a href="http://www.flypapershop.eu" target="_blank" class="test-shadow p-4 text-neutral-700 rounded-5 grow flex justify-center items-center bg-white-custom cursor-pointer md:cursor-none custom-cursor-white">
+                <a href="http://www.flypapershop.eu" target="_blank" class="test-shadow p-4 text-white rounded-5 grow flex justify-center items-center bg-neutral-700 cursor-pointer md:cursor-none custom-cursor-white">
                     <p class="text-center font-extrabold text-lg">WEBSITE</p>
                 </a>
 

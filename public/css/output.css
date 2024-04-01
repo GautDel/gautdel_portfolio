@@ -637,6 +637,18 @@ video {
   height: 100%;
 }
 
+.max-h-48 {
+  max-height: 12rem;
+}
+
+.max-h-72 {
+  max-height: 18rem;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
 .min-h-24 {
   min-height: 6rem;
 }
@@ -680,6 +692,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .grow {
@@ -764,16 +780,20 @@ video {
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .self-center {
   align-self: center;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .whitespace-nowrap {
@@ -806,6 +826,15 @@ video {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4 {
@@ -1094,6 +1123,28 @@ a {
   animation: contact-open 1s forwards;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #ececec;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #737373;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @keyframes projects {
   0% {
     height: 0%;
@@ -1185,6 +1236,10 @@ a {
 
   .md\:w-8 {
     width: 2rem;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .md\:-translate-x-0 {
