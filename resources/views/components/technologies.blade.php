@@ -3,7 +3,7 @@
     <h2 class="py-8 font-extrabold text-4xl text-neutral-700 text-center self-center">TECHNOLOGIES</h2>
 
     <div class="absolute top-1 right-1 md:top-3 md:right-3">
-        <p @click="[close = true, setTimeout(() => {technologies = false, close = false}, 1000)]" class="rotate-45 font-extrabold text-neutral-700 text-6xl cursor-pointer md:cursor-none hover:text-red-500 ease-in duration-500">+</p>
+        <p @click="[close = true, setTimeout(() => {technologies = false, close = false}, 1000)]" class="rotate-45 font-extrabold text-neutral-700 text-6xl cursor-pointer lg:cursor-none hover:text-red-500 ease-in duration-500">+</p>
     </div>
 
     <div class="md:flex md:flex-row md:flex-wrap overflow-x-hidden pb-8 md:overflow-y-scroll">

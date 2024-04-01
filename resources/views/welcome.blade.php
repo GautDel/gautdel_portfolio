@@ -21,9 +21,9 @@
     ])
 </head>
 
-<body x-data="{projects: false, contact: false, technologies: false, weather: getWeather(), text: ['fullstack developer', 'tennis player &#127934;', 'chef &#128104;&#8205;&#127859;', 'cat pleaser &#128576;'], counter: 0}" class="antialiased overflow-x-hidden md:cursor-none">
+<body x-data="{projects: false, contact: false, technologies: false, weather: getWeather(), text: ['fullstack developer', 'tennis player &#127934;', 'chef &#128104;&#8205;&#127859;', 'cat pleaser &#128576;'], counter: 0}" class="antialiased overflow-x-hidden lg:cursor-none">
 
-    <div class="rounded-cursor mix-blend-difference hidden md:block"></div>
+    <div class="rounded-cursor mix-blend-difference hidden lg:block"></div>
 
     <div class="relative p-4 lg:flex lg:justify-center lg:items-center lg:pt-10 lg:overflow-hidden">
 
@@ -49,18 +49,18 @@
 
                     <div class="flex flex-row gap-4 w-full flex-nowrap">
                         <div @click="counter < text.length - 1 ? counter++ : counter = 0" class="px-2 h-48 test-shadow flex w-1/2 bg-neutral-700 justify-center items-center">
-                            <h1 class="text-white text-center font-extrabold text-2xl md:text-4xl py-16 uppercase cursor-pointer md:cursor-none" x-text="text[counter]"></h1>
+                            <h1 class="text-white text-center font-extrabold text-2xl md:text-4xl py-16 uppercase cursor-pointer lg:cursor-none custom-cursor-white" x-text="text[counter]"></h1>
                         </div>
 
                         <div class="flex flex-col w-1/2 gap-4">
                             <div class="flex gap-4 w-full h-1/2">
-                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://github.com/GautDel" class="w-1/2 h-full custom-cursor-white cursor-pointer md:cursor-none" target="_blank">
+                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://github.com/GautDel" class="w-1/2 h-full custom-cursor-white cursor-pointer lg:cursor-none" target="_blank">
                                     <div class="test-shadow h-full flex justify-center items-center grow hover:bg-neutral-700 ease-in duration-300">
                                         <image :class="hovered ? 'grayscale invert' : ''" class="w-14 ease-in duration-300" src="{{ asset('images/github-mark.png') }}">
                                     </div>
                                 </a>
 
-                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://ie.linkedin.com/in/gauthier-delalleau" class="w-1/2 h-full custom-cursor-white cursor-pointer md:cursor-none" target="_blank">
+                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://ie.linkedin.com/in/gauthier-delalleau" class="w-1/2 h-full custom-cursor-white cursor-pointer lg:cursor-none" target="_blank">
                                     <div class="test-shadow h-full flex justify-center items-center bg-[#ececec] grow hover:bg-neutral-700 ease-in duration-300">
                                         <image :class="hovered ? 'grayscale invert' : ''" class="w-14 ease-in duration-300"  src="{{ asset('images/LI-In-Bug.png') }}">
                                     </div>
@@ -69,13 +69,13 @@
 
                             <div class="flex gap-4 w-full h-1/2 ">
 
-                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://mastodon.social/@GautDel" class="w-1/2 h-full custom-cursor-white cursor-pointer md:cursor-none" target="_blank">
+                                <a x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" href="https://mastodon.social/@GautDel" class="w-1/2 h-full custom-cursor-white cursor-pointer lg:cursor-none" target="_blank">
                                     <div class="test-shadow h-full flex justify-center items-center bg-[#ececec] grow hover:bg-neutral-700 ease-in duration-300">
                                         <image :class="hovered ? 'grayscale invert' : ''" class="w-14 ease-in duration-300" src="{{ asset('images/logo-purple.svg') }}">
                                     </div>
                                 </a>
 
-                                <a  x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" class="w-1/2 h-full custom-cursor-white cursor-pointer md:cursor-none" target="_blank">
+                                <a  x-data="{hovered: false}" @mouseover="hovered = true" @mouseover.away="hovered = false" class="w-1/2 h-full custom-cursor-white cursor-pointer lg:cursor-none" target="_blank">
                                     <div class="test-shadow h-full flex justify-center items-center grow hover:bg-neutral-700 ease-in duration-300">
                                         <h1  :class="hovered ? 'grayscale invert' : ''" class=" ease-in duration-300 w-full text-neutral-700 font-extrabold text-2xl md:text-3xl text-center">BLOG</h1>
                                     </div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div @click="contact = !contact" :class="contact ? 'bg-[#ececec]' : 'bg-neutral-700'" class=" text-white w-full test-shadow py-4 text-center  grow custom-cursor-white relative cursor-pointer md:cursor-none">
+                    <div @click="contact = !contact" :class="contact ? 'bg-[#ececec]' : 'bg-neutral-700'" class=" text-white w-full test-shadow py-4 text-center  grow custom-cursor-white relative cursor-pointer lg:cursor-none">
 
                         <span x-show="!technologies && !projects" class="absolute flex h-5 w-5 -top-1 -right-1">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300 opacity-75"></span>
@@ -117,11 +117,11 @@
 
             <div class="w-full flex flex-col md:flex-row gap-4 min-h-40 relative">
 
-                <div @click="[projects = !projects, window.scrollTo({top: 0, behavior: 'smooth'})]" class="test-shadow flex justify-center items-center bg-neutral-700 relative min-h-24 px-4 grow custom-cursor-white cursor-pointer md:cursor-none">
+                <div @click="[projects = !projects, window.scrollTo({top: 0, behavior: 'smooth'})]" class="test-shadow flex justify-center items-center bg-neutral-700 relative min-h-24 px-4 grow custom-cursor-white cursor-pointer lg:cursor-none">
                     <h1 class="text-white text-center font-extrabold text-4xl ">PROJECTS</h1>
                 </div>
 
-                <div @click="[technologies = !technologies, window.scrollTo({top: 0, behavior: 'smooth'})]" class="test-shadow flex bg-[#ececec] justify-center items-center min-h-24 px-4 custom-cursor-white cursor-pointer md:cursor-none">
+                <div @click="[technologies = !technologies, window.scrollTo({top: 0, behavior: 'smooth'})]" class="test-shadow flex bg-[#ececec] justify-center items-center min-h-24 px-4 custom-cursor-white cursor-pointer lg:cursor-none">
                     <h1 class="text-neutral-700 font-extrabold text-4xl text-center">TECHNOLOGIES</h1>
                 </div>
 

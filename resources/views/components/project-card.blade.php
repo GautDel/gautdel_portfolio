@@ -13,7 +13,7 @@
 
             <div class="flex flex-wrap gap-4">
                 @foreach($tech as $image)
-                <a class="bg-white-custom test-shadow rounded-5 flex flex-wrap items-center justify-center px-3 py-2 gap-2">
+                <a class="bg-white-custom test-shadow rounded-5 flex flex-wrap items-center justify-center px-3 py-2 gap-2 cursor-default lg:cursor-none">
                     <image class="w-8" src="{{asset('/images/logos/'.$image.'.svg')}}" />
                 </a>
 
@@ -21,10 +21,10 @@
             </div>
 
             <div class="flex flex-row gap-4">
-                <a href="{{$codeurl}}" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer md:cursor-none custom-cursor-white">
+                <a href="{{$codeurl}}" target="_blank" class="bg-white-custom test-shadow p-4 text-neutral-700 rounded-5 flex flex-row justify-center items-center cursor-pointer lg:cursor-none custom-cursor-white">
                     <image class="w-8" src="{{asset('/images/github-mark.png')}}">
                 </a>
-                <a href="{{$websiteurl}}" target="_blank" class="test-shadow p-4 text-white rounded-5 grow flex justify-center items-center bg-neutral-700 cursor-pointer md:cursor-none custom-cursor-white">
+                <a href="{{$websiteurl}}" target="_blank" class="test-shadow p-4 text-white rounded-5 grow flex justify-center items-center bg-neutral-700 cursor-pointer lg:cursor-none custom-cursor-white">
                     <p class="text-center font-extrabold text-lg">WEBSITE</p>
                 </a>
 
