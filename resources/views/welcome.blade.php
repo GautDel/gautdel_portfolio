@@ -94,7 +94,7 @@
 
                     <div @click="contact = !contact" :class="contact ? 'bg-[#ececec]' : 'bg-neutral-700'" class=" text-white w-full test-shadow py-4 text-center  grow custom-cursor-white relative cursor-pointer md:cursor-none">
 
-                        <span x-show="!projects" class="absolute flex h-5 w-5 -top-1 -right-1">
+                        <span x-show="!technologies && !projects" class="absolute flex h-5 w-5 -top-1 -right-1">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-full w-full bg-red-500"></span>
                         </span>
